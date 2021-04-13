@@ -14,4 +14,4 @@ These tutorials are the main material for the discussions of this course.
 | Discussion 7     | Simultaneous Inferences|
 | Discussion 8     | Multiple Linear Regression|
 | Discussion 9     | Variable Selection|
-| datasets     | Datasets used in the tutotials, most are from [textbook-data](http://users.stat.ufl.edu/~rrandles/sta4210/Rclassnotes/data/textdatasets/Chapter%20%206%20Data%20Sets.html)|
+| datasets     | Datasets used in the tutorials, most are from [textbook-data](http://users.stat.ufl.edu/~rrandles/sta4210/Rclassnotes/data/textdatasets/Chapter%20%206%20Data%20Sets.html)|
