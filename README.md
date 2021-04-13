@@ -1,8 +1,8 @@
 # Discussion notes for UC Davis STA 108 : Regression Analysis 
 
-This repository provides an *R Linear Regression Tuotial* in Rmd/PDF/HTML formats. The textbook referred in this tutorial is [Applied Linear Statistical Methods by Kutner](http://users.stat.ufl.edu/~winner/sta4211/ALSM_5Ed_Kutner.pdf).
+This repository provides *R Linear Regression Tuotials* in Rmd/PDF/HTML formats. The textbook referred in this tutorial is [Applied Linear Statistical Methods by Kutner](http://users.stat.ufl.edu/~winner/sta4211/ALSM_5Ed_Kutner.pdf).
 
-This tutorial is the main material for the discussions of this course. 
+These tutorials are the main material of the discussions for this course. 
 
 | Folder | Description |
 | --- | --- |
