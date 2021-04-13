@@ -1,7 +1,9 @@
 ---
 title: "R markdown basics"
 author: "Yuanyuan Li"
-output: pdf_document
+output:
+  html_document:
+    df_print: paged
 urlcolor: blue
 ---
 
