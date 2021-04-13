@@ -2,7 +2,7 @@
 
 This repository provides *R Linear Regression Tutorials* in Rmd/PDF/HTML formats. The reference is [Applied Linear Statistical Methods by Kutner, Chapter 1-9](http://users.stat.ufl.edu/~winner/sta4211/ALSM_5Ed_Kutner.pdf).
 
-These tutorials are the main material for the discussions of this course. 
+These tutorials are the main materials for the discussions of this course. 
 
 | Folder | Description |
 | --- | --- |
