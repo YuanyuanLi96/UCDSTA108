@@ -2,7 +2,10 @@
 title: 'STA 108 Discussion 8: Multiple linear regression'
 author: "Yuanyuan Li"
 output:
+<<<<<<< HEAD
   pdf_document: default
+=======
+>>>>>>> 24acc1de143626479248a0181fa6568c760fa4f8
   html_document:
     df_print: paged
 ---
@@ -313,7 +316,11 @@ MSR(X_3,X_4|X_1, X_2)&=\frac{SSR(X_3,X_4|X_1, X_2)}{df}
 Using CDI data as an example and *anova* function, the SSE under reduced/full model can be found in the column "RSS" with dfs($=df_R, df_F$) in the column "Res.Df", the extra SS can be found in the column "Sum of Sq", i.e., $SSR(V_6,V_7|V_4, V_5)$ with df($=df_R- df_F$) in the column "Df" in the table below.
 
 ```{r}
+<<<<<<< HEAD
 setwd("~/books/108s21/UCDSTA108-master/datasets")#set working directory to "datasets" folder
+=======
+setwd("~/books/108s21/Discussion/datasets")#set working directory to "datasets" folder
+>>>>>>> 24acc1de143626479248a0181fa6568c760fa4f8
 CDI = read.table("CDI.txt")
 reduced=lm(V8~V4+V5, data=CDI)
 full= lm(V8~V4+V5+V6+V7, data=CDI)
