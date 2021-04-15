@@ -608,7 +608,15 @@ SSR(X_3,X_4|X_1, X_2)&amp;=SSE(X_1, X_2)-SSE(X_1,X_2,X_3,X_4), \ df=2, \\
 MSR(X_3,X_4|X_1, X_2)&amp;=\frac{SSR(X_3,X_4|X_1, X_2)}{df}
 \end{align*}\]</span>
 <p>Using CDI data as an example and <em>anova</em> function, the SSE under reduced/full model can be found in the column &quot;RSS&quot; with dfs(<span class="math inline">\(=df_R, df_F\)</span>) in the column &quot;Res.Df&quot;, the extra SS can be found in the column &quot;Sum of Sq&quot;, i.e., <span class="math inline">\(SSR(V_6,V_7|V_4, V_5)\)</span> with df(<span class="math inline">\(=df_R- df_F\)</span>) in the column &quot;Df&quot; in the table below.</p>
+<<<<<<< HEAD
 <pre class="r"><code>setwd(&quot;~/books/108s21/UCDSTA108-master/datasets&quot;)#set working directory to &quot;datasets&quot; folder
+=======
+<<<<<<< HEAD
+<pre class="r"><code>setwd(&quot;~/books/108s21/UCDSTA108-master/datasets&quot;)#set working directory to &quot;datasets&quot; folder
+=======
+<pre class="r"><code>setwd(&quot;~/books/108s21/Discussion/datasets&quot;)#set working directory to &quot;datasets&quot; folder
+>>>>>>> 24acc1de143626479248a0181fa6568c760fa4f8
+>>>>>>> 89e9ae266ee061f8f56d12a5db4b95cfa9842848
 CDI = read.table(&quot;CDI.txt&quot;)
 reduced=lm(V8~V4+V5, data=CDI)
 full= lm(V8~V4+V5+V6+V7, data=CDI)
