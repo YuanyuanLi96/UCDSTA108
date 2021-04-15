@@ -48,13 +48,11 @@ x[1:3] # the first three elements
 x[3]
 
 ## ------------------------------------------------------------------------
-patients101 = read.csv("~/books/108winter2020/Discussion/Discussion 1/patients101.csv")
-
+patients101 = read.csv("~/books/108s21/UCDSTA108-master/datasets/patients101.csv")
 
 ## ------------------------------------------------------------------------
-setwd("~/books/108winter2020/Discussion/Discussion 1")#set working directory
+setwd("~/books/108s21/UCDSTA108-master/datasets")#set working directory to "datasets" folder
 patients101 = read.csv("patients101.csv")#read the data set in the folder
-
 
 ## ------------------------------------------------------------------------
 head(patients101)#Display the first six rows
