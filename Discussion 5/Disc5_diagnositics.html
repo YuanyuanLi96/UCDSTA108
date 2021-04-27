@@ -185,9 +185,7 @@ pre code {
 <h1>1. Residual plots</h1>
 <div id="against-the-predictor-variable-x" class="section level2">
 <h2>1.1 Against the predictor variable <span class="math inline">\(X\)</span></h2>
-<pre class="r"><code>di=cars$dist
-sp=cars$speed
-fit = lm(dist~speed, data=cars)
+<pre class="r"><code>fit = lm(dist~speed, data=cars)
 residuals = fit$residuals#or Y-yhat
 plot(x=cars$speed, y=residuals, xlab='predictor variable', ylab='residuals')
 abline(h=0, col='red')</code></pre>
