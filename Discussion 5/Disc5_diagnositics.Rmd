@@ -163,7 +163,7 @@ Since p-value is larger than 0.05 (given $\alpha=0.05$), we fail to reject $H_0$
 
 Check Figure 1.
 
-```{r, echo=FALSE, fig.cap="Transformation of X",out.width="70%", out.height="50%"}
+```{r, echo=FALSE, fig.cap="Transformation of X",out.width="50%",out.height="40%"}
 knitr::include_graphics("trans_x.png")
 ```
 
