@@ -265,7 +265,8 @@ s &lt;- sqrt((sum((d1-mean(d1))^2)+sum((d2-mean(d2))^2))/(n - 2))
 t.stat &lt;- (mean(d1)-mean(d2))/s/sqrt(1/n1+1/n2)
 t.stat</code></pre>
 <pre><code>## [1] -1.383369</code></pre>
-<pre class="r"><code>t.crit &lt;- qt(0.995, df = n-2)
+<pre class="r"><code>alpha=0.01
+t.crit &lt;- qt(1-alpha/2, df = n-2)
 t.crit</code></pre>
 <pre><code>## [1] 2.682204</code></pre>
 <p>Since <span class="math inline">\(|t|=1.38&lt;2.68\)</span>, we fail to reject <span class="math inline">\(H_0\)</span>, so the residuals have constant variance.</p>
