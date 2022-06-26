@@ -1,0 +1,89 @@
+---
+title: "STA 108 Discussion 1: Course Setup"
+author: "TA: Yuanyuan Li (yynli@ucdavis.edu)"
+output: 
+  pdf_document:
+    number_sections: true
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=6, fig.height=4) 
+```
+
+
+# R set up
+## Online approach
+
+For students in UC Davis, it is recommend to use the [Jupyterhub service](https://jupyterhub.ucdavis.edu/) after logging in using your UCD account. You don't need to download any packages to your local machine by using the online JupyterLab. 
+
+On JupyterLab, you can launch Terminals, Code Consoles, or Jupyter notebook. To create an R-backed jupyter notebook, just click the R kernel under "Notebook". The `Code` cells enable you to write and run R codes, and `Markdown` cells allow you to input text in Markdown style. Then you can export **PDF** file from the notebook to get codes embeded report. [Markdown for Jupyter notebooks cheatsheet](https://www.ibm.com/docs/en/db2-event-store/2.0.0?topic=notebooks-markdown-jupyter-cheatsheet)
+
+## Local approach
+
+### Install R:
+- Go to http://cran.freestatistics.org/.
+- Select the appropriate package based on your operating system.
+- Follow the installers instruction.
+
+### Install RStudio:
+- Go to https://rstudio.com/products/rstudio/download/.
+- Select the “Desktop” version.
+- Select the installer based on your operating system (usually the recommended for your system works
+just fine).
+
+### Starting RStudio
+
+- Click RStudio icon to run this program, and R will be open automatically in the background at the same time. You should have 4 panels. A brief description of the four windows follows:
+    - **Environment, History, Build, VCS**: This window lists all Data, Values Functions entered.
+    - **Files, Plots, Packages, Help**: Should you use the help command (the ?) in R, the relevant help document will be opened here.Should you plot a figure, the relevant figure will be displayed.
+    - **Console**: Where you type in your commands and retrieve your output.
+    - **Source**: A  convenient  place  to  store  your  commands,  which  can  then  be  sent  to  the  console  via keyboard shortcuts or with a button. 
+    
+- Ways of typing commands in R:
+    + Type code in Console
+    + [**Recomended**]Create a new source file and type code in the file: click the green cross (+) in the topleft corner, choose "R script"/"R notebook"/"R markdown".
+
+- Running R code:
+    - In R Console: hit *Enter* after the command line
+    - In R Source files: Highlight the part you need to run and hit the "run" button on the menu; or apply the shortcut: *Ctrl/command + Return*(MAC) or *Ctrl + Enter*(Windows)
+
+- Save R Source files (Script, notebook, markdown):
+    - click the blue square button in the source window.
+    - click File > Save/ Save as.
+
+
+
+### Install the R Markdown packages (to generate codes/output embeded pdf):
+
+R markdown is used within RStudio. You can compile a single R Markdown document to a report in different formats, such as PDF, HTML, or Word.
+
+- Install Markdown package by typing this command in R **Console**:
+
+```{r,eval=FALSE}
+install.packages("rmarkdown")
+```
+
+- Install LaTeX (TinyTeX) for PDF reports by typing this command in R **Console**:
+```{r,eval=FALSE}
+install.packages("tinytex")
+tinytex::install_tinytex()
+```
+
+
+### Create a R markdown file
+- Make sure you already have downloaded the required packages.
+
+- In RStudio, click the green "+" in the top left> R markdown > write a title and choose output file format > OK
+
+- Type text in the white space for your report, and only write R code in the grey R chunck, which can be created by click Insert>R or type ` ```{r} ` at the begining and ` ``` ` at the end.
+
+- When you click the **Knit** button, a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Tutorial Links
+- R coding tutorial: https://www.w3schools.com/r/default.asp.
+- R Markdown Basics: https://rmarkdown.rstudio.com/authoring_basics.html.
+
+
+

@@ -1,0 +1,113 @@
+---
+title: "R basics"
+author: "TA: Yuanyuan Li (yynli@ucdavis.edu)"
+output: 
+  pdf_document:
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=6, fig.height=4) 
+```
+
+# 1. Calculation: Use R as a calculator
+
+```{r}
+31/4*(37-25) 
+3^2
+sqrt(36)
+log(4)
+cos(6)
+```
+
+# 2. Objects 
+## Assign values to object 'x' using any one of the following:
+```{r}
+x = 5 
+x <- 5
+5 -> x
+```
+
+
+## Calculation
+```{r}
+x+3
+x^2
+sqrt(x)
+y = x^2
+```
+
+## Overwrite the existing objects
+```{r}
+x = 10
+x = x+1
+```
+
+
+#3. Vectors
+```{r}
+# Create a vector
+c(1,3,2,4)
+# Save the vector as 'x'
+x = c(1,3,2,4)
+
+# R applies functions to every element of a vector
+x - 10
+x^2
+```
+
+
+#4. Some useful functions
+```{r}
+mean(x) # mean
+sd(x) # standard deviation
+var(x) # variance
+summary(x)
+sum(x) # sum of all elements
+prod(x) # product of all elements
+length(x) # number of elements
+
+x[1:3] # the first three elements
+```
+
+#5. Import the data
+* Use "Import Dataset" button in the menu of Environment: 
+    + Read .txt file or .csv file : Import Dataset>From Text(base)>choose file>open>import 
+    + Read Excel file : Import Dataset>From Excel>choose file>open>import 
+
+* Read in a data set by specifying the full file path (remember to replace “\\” with “/” if your file path include “\\”): 
+```{r}
+data1 = read.table("~/Desktop/datasets/airfreight+breakage.txt")
+```
+
+* Read in a data set by setting the parent folder as working directory, then use "read.csv" or "read.table" function:
+```{r}
+setwd("~/Desktop/datasets")#set working directory to "datasets" folder
+data1 = read.table("airfreight+breakage.txt")#read the data set in the folder
+```
+
+#6. Accessing specific rows and columns in a dataframe
+```{r}
+head(data1)#Display the first six rows
+data1[1:3,]#Display the first six rows by row index
+Y = data1[,1] # Extract variables from dataset
+X = data1[,2]
+data1[3,2]#Display the value is row 3 and column 2
+```
+
+
+#7. Plot 
+```{r}
+# histograms
+hist(Y) 
+
+# boxplots
+boxplot(Y, main = 'Boxplot of Y')
+
+# scatterplots
+plot(X, Y, xlab = 'X', ylab = 'Y', main = 'Plot of Y versus X')
+```
+
+
+
